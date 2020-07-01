@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let pushs = [PushModel]()
+    
+    @IBOutlet weak var pushTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        pushTableView.register(UINib(nibName: PushCell.identifier, bundle: Bundle.main), forCellReuseIdentifier: PushCell.identifier)
     }
-
 
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pushs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: PushCell.identifier) as! PushCell
+        return cell
+    }
+    
+    
+}
