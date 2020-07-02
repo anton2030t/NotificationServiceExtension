@@ -18,10 +18,12 @@ class NotificationService: UNNotificationServiceExtension {
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
         if let bestAttemptContent = bestAttemptContent {
-            // Modify the notification content here...
-            bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
-            
-            contentHandler(bestAttemptContent)
+            if let apsData = bestAttemptContent.userInfo["aps"] as? [String: Any] {
+                let badge = apsData["badge"] as? Int
+                let badgeString = String(badge!)
+                bestAttemptContent.body = "У вас \(badgeString) сообщений"
+                contentHandler(bestAttemptContent)
+            }
         }
     }
     

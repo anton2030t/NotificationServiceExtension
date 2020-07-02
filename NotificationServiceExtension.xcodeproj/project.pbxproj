@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		6C5FF7E724AB75CF004B7973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FF7E624AB75CF004B7973 /* AppDelegate.swift */; };
 		6C5FF7E924AB75CF004B7973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FF7E824AB75CF004B7973 /* SceneDelegate.swift */; };
-		6C5FF7EB24AB75CF004B7973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FF7EA24AB75CF004B7973 /* ViewController.swift */; };
+		6C5FF7EB24AB75CF004B7973 /* PushTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FF7EA24AB75CF004B7973 /* PushTableViewController.swift */; };
 		6C5FF7EE24AB75CF004B7973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5FF7EC24AB75CF004B7973 /* Main.storyboard */; };
 		6C5FF7F024AB75D7004B7973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5FF7EF24AB75D7004B7973 /* Assets.xcassets */; };
-		6C5FF7F324AB75D7004B7973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5FF7F124AB75D7004B7973 /* LaunchScreen.storyboard */; };
 		6C5FF80224AB97A6004B7973 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FF80124AB97A6004B7973 /* NotificationService.swift */; };
 		6C5FF80624AB97A6004B7973 /* NotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C5FF7FF24AB97A6004B7973 /* NotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6C5FF81424ABA248004B7973 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5FF81324ABA248004B7973 /* UserNotifications.framework */; };
@@ -20,9 +19,11 @@
 		6C5FF81924ABA249004B7973 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FF81824ABA249004B7973 /* NotificationViewController.swift */; };
 		6C5FF81C24ABA249004B7973 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5FF81A24ABA249004B7973 /* MainInterface.storyboard */; };
 		6C5FF82024ABA249004B7973 /* NotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C5FF81124ABA248004B7973 /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6CA809CF24ACF0D300997DC3 /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA809CE24ACF0D300997DC3 /* PushModel.swift */; };
-		6CA809D224ACF2DF00997DC3 /* PushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA809D024ACF2DF00997DC3 /* PushCell.swift */; };
-		6CA809D324ACF2DF00997DC3 /* PushCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA809D124ACF2DF00997DC3 /* PushCell.xib */; };
+		6CA809CF24ACF0D300997DC3 /* PushItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA809CE24ACF0D300997DC3 /* PushItem.swift */; };
+		6CA809D624AD1E6B00997DC3 /* PushItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA809D524AD1E6B00997DC3 /* PushItemCell.swift */; };
+		6CA809DC24AD21E100997DC3 /* PushStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA809DB24AD21E100997DC3 /* PushStore.swift */; };
+		6CA809DF24AD223900997DC3 /* DateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA809DE24AD223900997DC3 /* DateParser.swift */; };
+		6CA809E224AD25BD00997DC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5FF7F124AB75D7004B7973 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,7 @@
 		6C5FF7E324AB75CF004B7973 /* NotificationServiceExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationServiceExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5FF7E624AB75CF004B7973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C5FF7E824AB75CF004B7973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C5FF7EA24AB75CF004B7973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C5FF7EA24AB75CF004B7973 /* PushTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTableViewController.swift; sourceTree = "<group>"; };
 		6C5FF7ED24AB75CF004B7973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C5FF7EF24AB75D7004B7973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C5FF7F224AB75D7004B7973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,9 +77,10 @@
 		6C5FF81824ABA249004B7973 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		6C5FF81B24ABA249004B7973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6C5FF81D24ABA249004B7973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CA809CE24ACF0D300997DC3 /* PushModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushModel.swift; sourceTree = "<group>"; };
-		6CA809D024ACF2DF00997DC3 /* PushCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushCell.swift; sourceTree = "<group>"; };
-		6CA809D124ACF2DF00997DC3 /* PushCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PushCell.xib; sourceTree = "<group>"; };
+		6CA809CE24ACF0D300997DC3 /* PushItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushItem.swift; sourceTree = "<group>"; };
+		6CA809D524AD1E6B00997DC3 /* PushItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushItemCell.swift; sourceTree = "<group>"; };
+		6CA809DB24AD21E100997DC3 /* PushStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushStore.swift; sourceTree = "<group>"; };
+		6CA809DE24AD223900997DC3 /* DateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,13 +137,12 @@
 				6C5FF7FA24AB7D64004B7973 /* NotificationServiceExtension.entitlements */,
 				6C5FF7E624AB75CF004B7973 /* AppDelegate.swift */,
 				6C5FF7E824AB75CF004B7973 /* SceneDelegate.swift */,
-				6C5FF7EA24AB75CF004B7973 /* ViewController.swift */,
-				6CA809CE24ACF0D300997DC3 /* PushModel.swift */,
-				6CA809D424ACF2E400997DC3 /* PushCell */,
 				6C5FF7EC24AB75CF004B7973 /* Main.storyboard */,
-				6C5FF7EF24AB75D7004B7973 /* Assets.xcassets */,
-				6C5FF7F124AB75D7004B7973 /* LaunchScreen.storyboard */,
-				6C5FF7F424AB75D7004B7973 /* Info.plist */,
+				6CA809DA24AD219900997DC3 /* Model */,
+				6CA809D924AD218000997DC3 /* View */,
+				6CA809D824AD216B00997DC3 /* ViewController */,
+				6CA809DD24AD21E600997DC3 /* Helpers */,
+				6CA809D724AD215800997DC3 /* Resources */,
 			);
 			path = NotificationServiceExtension;
 			sourceTree = "<group>";
@@ -174,13 +175,47 @@
 			path = NotificationContent;
 			sourceTree = "<group>";
 		};
-		6CA809D424ACF2E400997DC3 /* PushCell */ = {
+		6CA809D724AD215800997DC3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6CA809D024ACF2DF00997DC3 /* PushCell.swift */,
-				6CA809D124ACF2DF00997DC3 /* PushCell.xib */,
+				6C5FF7EF24AB75D7004B7973 /* Assets.xcassets */,
+				6C5FF7F124AB75D7004B7973 /* LaunchScreen.storyboard */,
+				6C5FF7F424AB75D7004B7973 /* Info.plist */,
 			);
-			path = PushCell;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6CA809D824AD216B00997DC3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C5FF7EA24AB75CF004B7973 /* PushTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6CA809D924AD218000997DC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CA809D524AD1E6B00997DC3 /* PushItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6CA809DA24AD219900997DC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CA809CE24ACF0D300997DC3 /* PushItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CA809DD24AD21E600997DC3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6CA809DB24AD21E100997DC3 /* PushStore.swift */,
+				6CA809DE24AD223900997DC3 /* DateParser.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C5FF7F324AB75D7004B7973 /* LaunchScreen.storyboard in Resources */,
-				6CA809D324ACF2DF00997DC3 /* PushCell.xib in Resources */,
+				6CA809E224AD25BD00997DC3 /* LaunchScreen.storyboard in Resources */,
 				6C5FF7F024AB75D7004B7973 /* Assets.xcassets in Resources */,
 				6C5FF7EE24AB75CF004B7973 /* Main.storyboard in Resources */,
 			);
@@ -315,10 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CA809CF24ACF0D300997DC3 /* PushModel.swift in Sources */,
-				6C5FF7EB24AB75CF004B7973 /* ViewController.swift in Sources */,
-				6CA809D224ACF2DF00997DC3 /* PushCell.swift in Sources */,
+				6CA809CF24ACF0D300997DC3 /* PushItem.swift in Sources */,
+				6CA809DC24AD21E100997DC3 /* PushStore.swift in Sources */,
+				6CA809DF24AD223900997DC3 /* DateParser.swift in Sources */,
+				6C5FF7EB24AB75CF004B7973 /* PushTableViewController.swift in Sources */,
 				6C5FF7E724AB75CF004B7973 /* AppDelegate.swift in Sources */,
+				6CA809D624AD1E6B00997DC3 /* PushItemCell.swift in Sources */,
 				6C5FF7E924AB75CF004B7973 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,13 +540,15 @@
 				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
-				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_FILE = NotificationServiceExtension/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonlarchenko.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -527,13 +565,15 @@
 				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
-				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_FILE = NotificationServiceExtension/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonlarchenko.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -549,6 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
 				INFOPLIST_FILE = NotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,6 +610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
 				INFOPLIST_FILE = NotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -589,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,6 +652,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
