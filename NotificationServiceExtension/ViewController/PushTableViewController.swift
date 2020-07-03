@@ -13,15 +13,43 @@ class PushTableViewController: UITableViewController {
     
     static let refreshPushNotification = Notification.Name(rawValue: "refreshPushNotification")
     let pushStore = PushStore.shared
+    
+    let tokenEntry: UITextView = {
+        let view = UITextView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.font = .systemFont(ofSize: 15)
+        view.backgroundColor = .clear
+        view.isEditable = false
+        return view
+    }()
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(PushTableViewController.getToken(notification:)), name: Notification.Name("getToken"), object: nil)
+
+        tokenEntry.isScrollEnabled = false
+                
+        view.addSubview(tokenEntry)
+        setupTokenEntry()
         
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(PushTableViewController.receivedRefreshPushNotification(_:)),
             name: PushTableViewController.refreshPushNotification,
             object: nil)
+    }
+    
+    @objc func getToken(notification: Notification) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        tokenEntry.text = appDelegate.token
+    }
+    
+    func setupTokenEntry() {
+        tokenEntry.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        tokenEntry.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        tokenEntry.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tokenEntry.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
     }
     
     deinit {
