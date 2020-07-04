@@ -92,7 +92,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
       let token = tokenParts.joined()
         self.token = token
-        NotificationCenter.default.post(name: Notification.Name("getToken"), object: nil)
       print("Device Token: \(token)")
     }
     
