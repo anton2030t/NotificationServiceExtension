@@ -19,7 +19,9 @@ enum Identifiers {
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var token: String?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         UIApplication.shared.applicationIconBadgeNumber = 0
@@ -89,6 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
       let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
       let token = tokenParts.joined()
+        self.token = token
       print("Device Token: \(token)")
     }
     
