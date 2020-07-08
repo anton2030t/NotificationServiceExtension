@@ -4,5 +4,7 @@
 ![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/1.jpeg)
 ![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/1.gif)
 ![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/2.gif)
-![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/3.png)
+#
 Also you can share your token device to send remote notifications from your device
+#
+![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/3.png)
