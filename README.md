@@ -1,4 +1,4 @@
-# Send Remote Push Notifications from Pusher with message or number (will be changed x2)
+# Send Remote Push Notifications from "Pusher" with message or number (will be changed x2)
 ![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/1.png)
 ![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/2.png)
 ![Image alt](https://github.com/anton2030t/NotificationServiceExtension/raw/master/1.jpeg)
